@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="css/mui.min.css" rel="stylesheet" />
+	</head>
+
+	<body>
+		<div class="mui-content">			
+			<div class="mui-content-padded">
+				<button id="fastStartButton" class="mui-btn-blue" style='width: 100%;'>test db</button>
+			</div>
+					
+		</div>
+		<script src="js/mui.min.js"></script>
+		<script src="https://cdn.wilddog.com/sdk/js/2.5.8/wilddog-sync.js"></script>
+		<script src="js/dbs.js"></script>
+		<script src="js/common.js"></script>
+		
+		<script type="text/javascript">
+			mui.init()
+			mui.plusReady(function(){			
+				ref.set({"a":"b"});
+      		})//plusready
+		</script>
+	</body>
+
+</html>
